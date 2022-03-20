@@ -24,7 +24,7 @@ const IndexPage = () => (
                 src="../images/cheese-meses.jpg"
                 width={200}
                 quality={40}
-                formats={["auto"]}
+                formats={["auto", "webp", "avif"]}
                 alt="Bolubutter Cheese Meses"
                 className="rounded mb-2"
               />
@@ -38,7 +38,7 @@ const IndexPage = () => (
                 src="../images/choco-crunch.jpg"
                 width={200}
                 quality={40}
-                formats={["auto"]}
+                formats={["auto", "webp", "avif"]}
                 alt="Bolubutter Choco Crunch"
                 className="rounded mb-2"
               />
@@ -52,7 +52,7 @@ const IndexPage = () => (
                 src="../images/almond-tiramisu.jpg"
                 width={200}
                 quality={40}
-                formats={["auto"]}
+                formats={["auto", "webp", "avif"]}
                 alt="Bolubutter Almond Tiramisu"
                 className="rounded mb-2"
               />
@@ -66,7 +66,7 @@ const IndexPage = () => (
                 src="../images/lotus-biscoff.jpg"
                 width={200}
                 quality={40}
-                formats={["auto"]}
+                formats={["auto", "webp", "avif"]}
                 alt="Bolubutter Lotus Biscoff"
                 className="rounded mb-2"
               />
@@ -80,7 +80,7 @@ const IndexPage = () => (
                 src="../images/lotus-hazelnut.jpg"
                 width={200}
                 quality={40}
-                formats={["auto"]}
+                formats={["auto", "webp", "avif"]}
                 alt="Bolubutter Hazelnut"
                 className="rounded mb-2"
               />
@@ -94,7 +94,7 @@ const IndexPage = () => (
                 src="../images/5-topping.jpg"
                 width={200}
                 quality={40}
-                formats={["auto"]}
+                formats={["auto", "webp", "avif"]}
                 alt="Bolubutter 5 Topping Mixed"
                 className="rounded mb-2"
               />
@@ -133,8 +133,9 @@ const IndexPage = () => (
             <div className="col-span-1">
               <StaticImage
                 src="../images/happy-ied.jpg"
+                width={200}
                 quality={40}
-                formats={["auto"]}
+                formats={["auto", "webp", "avif"]}
                 alt="Bolubutter Hampers Happy Ied"
                 className="rounded mb-2"
               />
@@ -148,7 +149,7 @@ const IndexPage = () => (
                 src="../images/family-ied.jpg"
                 width={200}
                 quality={40}
-                formats={["auto"]}
+                formats={["auto", "webp", "avif"]}
                 alt="Bolubutter Hampers Family Ied"
                 className="rounded mb-2"
               />
@@ -162,7 +163,7 @@ const IndexPage = () => (
                 src="../images/blue-ied.jpg"
                 width={200}
                 quality={40}
-                formats={["auto"]}
+                formats={["auto", "webp", "avif"]}
                 alt="Bolubutter Hampers Blue Ied"
                 className="rounded mb-2"
               />
@@ -176,7 +177,7 @@ const IndexPage = () => (
                 src="../images/arabian.jpg"
                 width={200}
                 quality={40}
-                formats={["auto"]}
+                formats={["auto", "webp", "avif"]}
                 alt="Bolubutter Hampers Lapis Legit"
                 className="rounded mb-2"
               />
@@ -190,7 +191,7 @@ const IndexPage = () => (
                 src="../images/lapis-legit.jpg"
                 width={200}
                 quality={40}
-                formats={["auto"]}
+                formats={["auto", "webp", "avif"]}
                 alt="Bolubutter Hampers Arabian"
                 className="rounded mb-2"
               />
