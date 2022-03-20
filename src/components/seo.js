@@ -49,6 +49,10 @@ function Seo({ description, lang, meta, title }) {
           content: metaDescription,
         },
         {
+          property: `og:image`,
+          content: ogimage,
+        },
+        {
           property: `og:type`,
           content: `website`,
         },
@@ -77,6 +81,7 @@ Seo.defaultProps = {
   lang: `en`,
   meta: [],
   description: ``,
+  ogimage: `https://i.ibb.co/2qrmQtV/choco-crunch.jpg`,
 }
 
 Seo.propTypes = {
@@ -84,6 +89,7 @@ Seo.propTypes = {
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string.isRequired,
+  ogimage: PropTypes.string,
 }
 
 export default Seo

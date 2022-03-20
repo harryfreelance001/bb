@@ -6,7 +6,11 @@ import Seo from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
-    <Seo title="bolubutter.id" />
+    <Seo
+      title="bolubutter.id"
+      description="♥ Baked Specially for You ♥"
+      ogimage="https://i.ibb.co/2qrmQtV/choco-crunch.jpg"
+    />
     <div className="max-w-2xl mx-auto pb-8 text-center px-4">
       <div className="grid grid-cols-2 gap-x-12 mt-6 md:mt-8">
         <div className="col-span-2 md:col-span-1">
