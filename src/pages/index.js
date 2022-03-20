@@ -8,7 +8,7 @@ const IndexPage = () => (
   <Layout>
     <Seo
       title="bolubutter.id"
-      description="♥ Baked Specially for You ♥"
+      description="♥ Baked Specially for You ♥ Order now for special price!"
       ogimage="https://i.ibb.co/2qrmQtV/choco-crunch.jpg"
     />
     <div className="max-w-2xl mx-auto pb-8 text-center px-4">
