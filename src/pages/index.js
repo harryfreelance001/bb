@@ -22,6 +22,7 @@ const IndexPage = () => (
             <div className="col-span-1">
               <StaticImage
                 src="../images/cheese-meses.jpg"
+                width={200}
                 quality={40}
                 formats={["auto"]}
                 alt="Bolubutter Cheese Meses"
@@ -35,6 +36,7 @@ const IndexPage = () => (
             <div className="col-span-1">
               <StaticImage
                 src="../images/choco-crunch.jpg"
+                width={200}
                 quality={40}
                 formats={["auto"]}
                 alt="Bolubutter Choco Crunch"
@@ -48,6 +50,7 @@ const IndexPage = () => (
             <div className="col-span-1">
               <StaticImage
                 src="../images/almond-tiramisu.jpg"
+                width={200}
                 quality={40}
                 formats={["auto"]}
                 alt="Bolubutter Almond Tiramisu"
@@ -61,6 +64,7 @@ const IndexPage = () => (
             <div className="col-span-1">
               <StaticImage
                 src="../images/lotus-biscoff.jpg"
+                width={200}
                 quality={40}
                 formats={["auto"]}
                 alt="Bolubutter Lotus Biscoff"
@@ -74,6 +78,7 @@ const IndexPage = () => (
             <div className="col-span-1">
               <StaticImage
                 src="../images/lotus-hazelnut.jpg"
+                width={200}
                 quality={40}
                 formats={["auto"]}
                 alt="Bolubutter Hazelnut"
@@ -87,6 +92,7 @@ const IndexPage = () => (
             <div className="col-span-1">
               <StaticImage
                 src="../images/5-topping.jpg"
+                width={200}
                 quality={40}
                 formats={["auto"]}
                 alt="Bolubutter 5 Topping Mixed"
@@ -140,6 +146,7 @@ const IndexPage = () => (
             <div className="col-span-1">
               <StaticImage
                 src="../images/family-ied.jpg"
+                width={200}
                 quality={40}
                 formats={["auto"]}
                 alt="Bolubutter Hampers Family Ied"
@@ -153,6 +160,7 @@ const IndexPage = () => (
             <div className="col-span-1">
               <StaticImage
                 src="../images/blue-ied.jpg"
+                width={200}
                 quality={40}
                 formats={["auto"]}
                 alt="Bolubutter Hampers Blue Ied"
@@ -166,6 +174,7 @@ const IndexPage = () => (
             <div className="col-span-1">
               <StaticImage
                 src="../images/arabian.jpg"
+                width={200}
                 quality={40}
                 formats={["auto"]}
                 alt="Bolubutter Hampers Lapis Legit"
@@ -179,6 +188,7 @@ const IndexPage = () => (
             <div className="col-span-1">
               <StaticImage
                 src="../images/lapis-legit.jpg"
+                width={200}
                 quality={40}
                 formats={["auto"]}
                 alt="Bolubutter Hampers Arabian"
