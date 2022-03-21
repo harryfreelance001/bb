@@ -15,11 +15,11 @@ const IndexPage = ({ data }) => {
         description="♥ Baked Specially for You ♥ Order now for special price!"
         ogimage="https://i.ibb.co/2qrmQtV/choco-crunch.jpg"
       />
-      <div className="max-w-2xl mx-auto pb-8 text-center px-4">
-        <div className="grid grid-cols-2 gap-x-12 mt-6 md:mt-8">
+      <div className="max-w-2xl px-4 pb-8 mx-auto text-center">
+        <div className="grid grid-cols-2 mt-6 gap-x-12 md:mt-8">
           <div className="col-span-2 md:col-span-1">
             {/* BOLUBUTTER SERIES */}
-            <h5 className=" text-secondary uppercase font-medium text-sm mb-6">
+            <h5 className="mb-6 text-sm font-medium uppercase  text-secondary">
               ★ Bolubutter Series ★
             </h5>
             <div className="grid grid-cols-2 gap-x-4 gap-y-6">
@@ -29,9 +29,9 @@ const IndexPage = ({ data }) => {
                     <GatsbyImage
                       image={product.node.productImage.gatsbyImageData}
                       alt={product.node.productName}
-                      className="rounded mb-2"
+                      className="mb-2 rounded"
                     />
-                    <div className="flex justify-between text-secondary mb-2 text-sm">
+                    <div className="flex justify-between mb-2 text-sm text-secondary">
                       <span className="font-medium">
                         {product.node.productName}
                       </span>
@@ -45,13 +45,13 @@ const IndexPage = ({ data }) => {
             </div>
             <a
               href="https://wa.me/6285386349888?text=Hi%20kak%2C%20saya%20mau%20pesan%20bolubutter"
-              className="rounded-full bg-secondary px-8 py-3 hover:opacity-80 block text-lg mt-8"
+              className="block px-8 py-3 mt-8 text-lg rounded-full bg-secondary hover:opacity-80"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 682 682.66669"
                 fill="currentColor"
-                className=" text-primary w-6 h-6 inline mr-2"
+                className="inline w-6 h-6 mr-2  text-primary"
               >
                 <g>
                   <path
@@ -65,7 +65,7 @@ const IndexPage = ({ data }) => {
           </div>
           <div className="col-span-2 md:col-span-1">
             {/* HAMPERS SERIES */}
-            <h5 className=" text-secondary uppercase font-medium text-sm mb-6 mt-16 md:mt-0">
+            <h5 className="mt-16 mb-6 text-sm font-medium uppercase  text-secondary md:mt-0">
               ★ Hampers Series ★
             </h5>
             <div className="grid grid-cols-2 gap-x-4 gap-y-6">
@@ -75,9 +75,9 @@ const IndexPage = ({ data }) => {
                     <GatsbyImage
                       image={product.node.productImage.gatsbyImageData}
                       alt={product.node.productName}
-                      className="rounded mb-2"
+                      className="mb-2 rounded"
                     />
-                    <div className="flex justify-between text-secondary mb-2 text-sm">
+                    <div className="flex justify-between mb-2 text-sm text-secondary">
                       <span className="font-medium">
                         {product.node.productName}
                       </span>
@@ -91,13 +91,13 @@ const IndexPage = ({ data }) => {
             </div>
             <a
               href="https://wa.me/6285386349888?text=Hi%20kak%2C%20saya%20mau%20pesan%20hampers"
-              className="rounded-full bg-secondary px-8 py-3 hover:opacity-80 block text-lg mt-8"
+              className="block px-8 py-3 mt-8 text-lg rounded-full bg-secondary hover:opacity-80"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 682 682.66669"
                 fill="currentColor"
-                className=" text-primary w-6 h-6 inline mr-2"
+                className="inline w-6 h-6 mr-2  text-primary"
               >
                 <g>
                   <path
@@ -130,7 +130,7 @@ export const data = graphql`
           productPrice
           productTag
           productImage {
-            gatsbyImageData(quality: 40, width: 200, formats: AVIF)
+            gatsbyImageData(quality: 40, width: 200, formats: [AUTO, WEBP])
           }
         }
       }
@@ -146,7 +146,7 @@ export const data = graphql`
           productPrice
           productTag
           productImage {
-            gatsbyImageData(quality: 40, width: 200, formats: AVIF)
+            gatsbyImageData(quality: 40, width: 200, formats: [AUTO, WEBP])
           }
         }
       }
