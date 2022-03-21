@@ -37,6 +37,7 @@ module.exports = {
       options: {
         spaceId: `mozuds3wrhjk`,
         accessToken: `PJefb0q6VRizqAdymAfB5eOKwVDHED4yvWkBRKM5LQU`,
+        downloadLocal: true,
       },
     },
 

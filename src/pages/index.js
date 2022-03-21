@@ -19,7 +19,7 @@ const IndexPage = ({ data }) => {
         <div className="grid grid-cols-2 mt-6 gap-x-12 md:mt-8">
           <div className="col-span-2 md:col-span-1">
             {/* BOLUBUTTER SERIES */}
-            <h5 className="mb-6 text-sm font-medium uppercase  text-secondary">
+            <h5 className="mb-6 text-sm font-medium uppercase text-secondary">
               ★ Bolubutter Series ★
             </h5>
             <div className="grid grid-cols-2 gap-x-4 gap-y-6">
@@ -27,7 +27,10 @@ const IndexPage = ({ data }) => {
                 return (
                   <div className="col-span-1" key={product.node.id}>
                     <GatsbyImage
-                      image={product.node.productImage.gatsbyImageData}
+                      image={
+                        product.node.productImage.localFile.childImageSharp
+                          .gatsbyImageData
+                      }
                       alt={product.node.productName}
                       className="mb-2 rounded"
                     />
@@ -51,7 +54,7 @@ const IndexPage = ({ data }) => {
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 682 682.66669"
                 fill="currentColor"
-                className="inline w-6 h-6 mr-2  text-primary"
+                className="inline w-6 h-6 mr-2 text-primary"
               >
                 <g>
                   <path
@@ -65,7 +68,7 @@ const IndexPage = ({ data }) => {
           </div>
           <div className="col-span-2 md:col-span-1">
             {/* HAMPERS SERIES */}
-            <h5 className="mt-16 mb-6 text-sm font-medium uppercase  text-secondary md:mt-0">
+            <h5 className="mt-16 mb-6 text-sm font-medium uppercase text-secondary md:mt-0">
               ★ Hampers Series ★
             </h5>
             <div className="grid grid-cols-2 gap-x-4 gap-y-6">
@@ -73,7 +76,10 @@ const IndexPage = ({ data }) => {
                 return (
                   <div className="col-span-1" key={product.node.id}>
                     <GatsbyImage
-                      image={product.node.productImage.gatsbyImageData}
+                      image={
+                        product.node.productImage.localFile.childImageSharp
+                          .gatsbyImageData
+                      }
                       alt={product.node.productName}
                       className="mb-2 rounded"
                     />
@@ -97,7 +103,7 @@ const IndexPage = ({ data }) => {
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 682 682.66669"
                 fill="currentColor"
-                className="inline w-6 h-6 mr-2  text-primary"
+                className="inline w-6 h-6 mr-2 text-primary"
               >
                 <g>
                   <path
@@ -130,7 +136,11 @@ export const data = graphql`
           productPrice
           productTag
           productImage {
-            gatsbyImageData(quality: 40, width: 200, formats: [AUTO, WEBP])
+            localFile {
+              childImageSharp {
+                gatsbyImageData(formats: [AUTO, WEBP], quality: 40)
+              }
+            }
           }
         }
       }
@@ -146,7 +156,11 @@ export const data = graphql`
           productPrice
           productTag
           productImage {
-            gatsbyImageData(quality: 40, width: 200, formats: [AUTO, WEBP])
+            localFile {
+              childImageSharp {
+                gatsbyImageData(formats: [AUTO, WEBP], quality: 40)
+              }
+            }
           }
         }
       }
